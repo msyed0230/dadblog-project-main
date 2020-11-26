@@ -54,7 +54,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link active" href="{% url 'about' %}">About</a>
                         <a class="nav-link" href="{% static 'introduction.pdf' %}">Literature</a>
                         <a class="nav-link" href="{% url 'allblogs' %}">Naaqliyat</a>
                     </div>
@@ -63,20 +63,13 @@
         </header>
 
         <main role="main">
-           
+        <br />
+        <br />
+            <div class="container">
+                <h1 class="text-center">About Murshid Miyan Academy</h1>
+            </div>
             <div class="album py-5 bg-light">
-                <div class="container">
-                    {% for about in about.all %}
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                <img class="card-img-top" src="{{ about.image.url }}" height=200 width=250/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-                                <div class="card-body">
-                                    <p class="card-text">{{about.body}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
+                <p class="text-center">Stuff</p>
             </div>
 
         </main>
